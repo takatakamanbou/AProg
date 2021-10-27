@@ -5,10 +5,10 @@ import re  # 「正規表現」を扱うモジュール (p.365)
 fn = '11-0.txt'
 
 # 本文より前の部分（ヘッダ）と本文との境目に記された文字列
-markS = '*** START OF THIS PROJECT GUTENBERG EBOOK ALICE’S ADVENTURES IN WONDERLAND ***'
+markS = '*** START OF THE PROJECT GUTENBERG EBOOK ALICE’S ADVENTURES IN WONDERLAND ***'
 
 # 本文より後の部分（フッタ）と本文の境目に記された文字列
-markE = '*** END OF THIS PROJECT GUTENBERG EBOOK ALICE’S ADVENTURES IN WONDERLAND ***'
+markE = '*** END OF THE PROJECT GUTENBERG EBOOK ALICE’S ADVENTURES IN WONDERLAND ***'
 
 # 除去したい記号パターンから正規表現オブジェクトを生成
 prog = re.compile("[,\.;:'`?!\(\)\[\]‘’“”]")  # このパターンがどういう意味かは p.368,369 
